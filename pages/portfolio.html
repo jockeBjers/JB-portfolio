@@ -25,25 +25,20 @@
     </header>
 
 
-
     <section class="portfolio-page">
 
-        <button class="portfolio-buttons" id="portfolio-prev"> &lt; </button>
+        <button class="portfolio-buttons" id="portfolio-prev" onclick="previousIframe()"> &lt; </button>
+
         <figure class="portfolio-iframes">
-            <iframe class="p-iframe" src="https://jockebjers.github.io/rock-paper-scissors/">
-            </iframe>
+            <iframe id="portfolio-iframe" class="p-iframe"
+                src="https://jockebjers.github.io/rock-paper-scissors/"></iframe>
             <figcaption class="iframe-text">
-
-
-
-                <a class="iframe-links" href="https://github.com/jockeBjers/rock-paper-scissors" target="_blank">Rock -
-                    Paper - Scissors</a>
-
-
-
+                <a id="portfolio-link" class="iframe-links" href="https://github.com/jockeBjers/rock-paper-scissors"
+                    target="_blank">Rock - Paper - Scissors</a>
             </figcaption>
         </figure>
-        <button class="portfolio-buttons" id="portfolio-next">&gt;</button>
+
+        <button class="portfolio-buttons" id="portfolio-next" onclick="nextIframe()">&gt;</button>
 
     </section>
 
