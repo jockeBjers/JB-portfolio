@@ -106,7 +106,7 @@ header h1,
     background-image:
         linear-gradient(45deg, rgb(43, 43, 43) 10%, transparent 100%),
         linear-gradient(0, rgba(43, 43, 43) 5%, transparent 100%),
-        url('images/machu.jpg');
+        url('images/nkpg.jpg');
     height: 500px;
 }
 
@@ -142,8 +142,9 @@ header h1,
 
 #content-box-image {
     background-image:
-        linear-gradient(45deg, rgb(43, 43, 43) 10%, transparent 100%),
-        url('images/nkpg.jpg');
+    linear-gradient(45deg, rgb(43, 43, 43) 10%, transparent 100%),
+    linear-gradient(0, rgba(43, 43, 43) 15%, transparent 100%),
+        url('images/nkpgb.jpg');
 
     height: 500px;
     background-attachment: fixed;
