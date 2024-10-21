@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(49, 49, 49);
     font-family: 'Exo 2', sans-serif;
-
 }
 
 h1,
@@ -20,12 +23,13 @@ header {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    background: rgb(43, 43, 43);
+    background: #2b2b2b;
     background: linear-gradient(45deg, rgb(37, 37, 37)35%, rgb(43, 43, 43) 10%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-header h1 {
+header h1,
+#intro {
     font-size: 50px;
     color: rgb(255, 217, 0);
     padding-left: 20px;
@@ -70,6 +74,120 @@ header h1 {
     text-decoration-line: underline;
     text-decoration-color: rgb(255, 217, 0);
 }
+
+/* HOME PAGE */
+
+
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.parallax {
+    background-image:
+        linear-gradient(45deg, rgb(43, 43, 43) 10%, transparent 100%),
+        linear-gradient(0, rgba(43, 43, 43) 5%, transparent 100%),
+        url('images/nkpgb.jpg');
+
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+#parallax-news {
+    background-image:
+        linear-gradient(45deg, rgb(43, 43, 43) 10%, transparent 100%),
+        linear-gradient(0, rgba(43, 43, 43) 5%, transparent 100%),
+        url('images/machu.jpg');
+    height: 500px;
+}
+
+.inner-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 217, 0);
+    font-size: 36px;
+    text-align: center;
+}
+
+#inner-box-news {
+
+    background-color: rgb(43, 43, 43, 0.5);
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: rgb(255, 235, 153) 1px 0 10px;
+}
+
+.content-box {
+    color: rgb(255, 217, 0);
+    height: 100px;
+    background-color: rgb(43, 43, 43);
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#content-box-image {
+    background-image:
+        linear-gradient(45deg, rgb(43, 43, 43) 10%, transparent 100%),
+        url('images/nkpg.jpg');
+
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+#parallax-link,
+.back-to-top {
+    font-size: 36px;
+    text-decoration-line: none;
+    transition: transform .2s;
+}
+
+#parallax-link:link,
+.back-to-top:link {
+    color: rgb(255, 217, 0);
+
+}
+
+#parallax-link:visited,
+.back-to-top:visited {
+    color: rgb(255, 217, 0);
+}
+
+#parallax-link:hover,
+.back-to-top:hover {
+    transform: scale(1.15);
+    color: rgb(255, 217, 0);
+    text-shadow: rgb(255, 235, 153) 1px 0 10px;
+}
+
+#parallax-link:active,
+.back-to-top:active {
+    color: rgb(255, 217, 0);
+
+}
+
+
+/* HOME PAGE END*/
+
 
 
 /* PORTFOLIO PAGE */
@@ -142,6 +260,40 @@ header h1 {
 
 /* CONTACT PAGE */
 
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+
+.contact-container {
+    color: rgb(148, 148, 148);
+    font-size: 23px;
+    padding: 100px;
+    background-image:
+        linear-gradient(45deg, rgb(43, 43, 43) 60%, transparent 100%),
+        linear-gradient(45deg, rgba(43, 43, 43) 50%, transparent),
+        url('images/bogota.jpg');
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+    width: 60%;
+    box-shadow: inset 0 0 10px #000000;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* CONTACT PAGE END */
+
+/* ABOUT PAGE */
+
+/* ABOUT PAGE END */
+
+
 /* SCROLL BAR */
 ::-webkit-scrollbar {
     width: 10px;
@@ -157,33 +309,4 @@ header h1 {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-
-.contact-page {
-    z-index: 0;
-    display: flex;
-    justify-content: center;
-    margin: 70px;
-}
-
-.contact-container {
-    color: rgb(148, 148, 148);
-    font-size: 23px;
-    padding: 100px;
-    background-image:
-        linear-gradient(45deg, rgb(43, 43, 43) 60%, transparent 100%),
-        linear-gradient(45deg, rgba(43, 43, 43) 50%, transparent),
-        url('images/bogota.jpg');
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 700px;
-    width: 60%;
-    box-shadow: inset 0 0 10px #000000;
-    overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }

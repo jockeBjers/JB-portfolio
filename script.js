@@ -1,3 +1,17 @@
+/* INDEX PAGE */
+var i = 0;
+var txt = 'Well hello there, welcome. Behave or get kicked out';
+var speed = 50;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("intro").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+/* portfolio page */
 const iframes = [
     {
         src: "https://jockebjers.github.io/rock-paper-scissors/",
@@ -9,7 +23,7 @@ const iframes = [
         link: "https://github.com/jockeBjers/Etch-a-Sketch",
         title: "Etch - a - sketch"
     },
-    {  
+    {
         src: "../images/Screenshot_163.png",
         link: "https://github.com/jockeBjers/StudentManagementSystem",
         title: "Student management system"
@@ -28,8 +42,17 @@ function updateIframe() {
     linkElement.href = iframes[currentIframeIndex].link;
     linkElement.textContent = iframes[currentIframeIndex].title;
 
-    prevButton.style.visibility = currentIframeIndex === 0 ? 'hidden' : 'visible'; 
-    nextButton.style.visibility = currentIframeIndex === iframes.length - 1 ? 'hidden' : 'visible'; 
+    if (currentIframeIndex === 0) {
+        prevButton.style.visibility = 'hidden';
+    } else {
+        prevButton.style.visibility = 'visible';
+    }
+
+    if (currentIframeIndex === iframes.length - 1) {
+        nextButton.style.visibility = 'hidden';
+    } else {
+        nextButton.style.visibility = 'visible';
+    }
 }
 
 
@@ -41,10 +64,13 @@ function nextIframe() {
 }
 
 function previousIframe() {
-    if (currentIframeIndex > 0) { 
+    if (currentIframeIndex > 0) {
         currentIframeIndex--;
         updateIframe();
     }
 }
 
-updateIframe();
+window.onload = function () {
+    typeWriter();
+    updateIframe();
+}
