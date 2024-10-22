@@ -30,6 +30,7 @@ const iframeElement = document.getElementById("portfolio-iframe");
 const linkElement = document.getElementById("portfolio-link");
 const prevButton = document.getElementById("portfolio-prev");
 const nextButton = document.getElementById("portfolio-next");
+
 function updateIframe() {
 
 
@@ -66,5 +67,5 @@ function previousIframe() {
 }
 
 currentIframeIndex = 0;
-updateIframe();    
+updateIframe();
 
