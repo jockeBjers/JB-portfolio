@@ -102,6 +102,10 @@ header h1,
     position: relative;
 }
 
+#parallax-intro {
+    height: 1000px; 
+}
+
 
 #parallax-news {
     background-image:
@@ -119,6 +123,9 @@ header h1,
     color: rgb(255, 217, 0);
     font-size: 36px;
     text-align: center;
+}
+#inner-box-intro{
+    top: 20%;
 }
 
 #inner-box-news {
@@ -164,7 +171,9 @@ header h1,
     font-size: 36px;
     text-decoration-line: none;
     transition: transform .2s;
+    
 }
+
 
 #parallax-link:link,
 .footer-links:link {
@@ -261,6 +270,15 @@ header h1,
     align-items: center;
     justify-content: center;
     font-size: 40px;
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 .iframe-links {
@@ -344,3 +362,4 @@ header h1,
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
