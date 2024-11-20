@@ -1,4 +1,3 @@
-/* INDEX PAGE */
 var i = 0;
 var txt = 'Well hello there, welcome. Behave or get kicked out';
 var speed = 50;
