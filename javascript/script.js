@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Well hello there, welcome. Behave or get kicked out';
+var txt = 'Välkommen, kul att ni har hittat hit!';
 var speed = 50;
 
 function typeWriter() {
@@ -38,3 +38,10 @@ window.onscroll = () => {
         }
     });
 };
+
+const aboutContainer = document.querySelector('.about-container');
+
+aboutContainer.addEventListener('wheel', (event) => {
+    event.preventDefault(); // Prevent default vertical scroll behavior
+    aboutContainer.scrollLeft += event.deltaY; // Scroll horizontally based on vertical scroll
+});
