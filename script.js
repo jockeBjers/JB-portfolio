@@ -21,9 +21,15 @@ window.onscroll = () => {
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop - midOfDevice;
-        if (scrollY >= sectionTop ) {
-          current = section.getAttribute("id"); }
-      });
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute("id");
+        }
+    });
+    if (scrollY === 0) {
+        current = "header";
+    }
 
     navLinks.forEach((link) => {
         link.classList.remove("active");
