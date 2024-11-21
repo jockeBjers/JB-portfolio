@@ -1,6 +1,12 @@
 
 const iframes = [
     {
+        src: "https://jockebjers.github.io/calculator/",
+        link: "https://github.com/jockeBjers/calculator",
+        title: "Calculator"
+    },
+
+    {
         src: "https://mortal-weather.github.io/TempCheck/",
         link: "https://github.com/Mortal-Weather/TempCheck",
         title: "TempCheck"
@@ -10,12 +16,6 @@ const iframes = [
         src: "https://jockebjers.github.io/cooking-school/",
         link: "https://github.com/jockeBjers/cooking-school",
         title: "Cooking School"
-    },
-
-    {
-        src: "https://jockebjers.github.io/calculator/",
-        link: "https://github.com/jockeBjers/calculator",
-        title: "Calculator"
     },
 
     {
