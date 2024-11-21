@@ -7,6 +7,8 @@
     <title>JB portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="./script.js" defer></script>
+    <script src="./pages/portfolio.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
@@ -17,10 +19,10 @@
     <header id="header">
         <h1>Joakim Bjerselius</h1>
         <nav class="page-nav">
-            <a class="page-links" href="index.html"><strong class="strong-link">Start</strong></a>
-            <a class="page-links" href="./pages/about.html">About me</a>
-            <a class="page-links" href="./pages/portfolio.html">Portfolio</a>
-            <a class="page-links" href="./pages/contact.html">Contact</a>
+            <a class="page-links active" href="#parallax-intro">Start</a>
+            <a class="page-links" href="#about-me-section">Om mig</a>
+            <a class="page-links" href="#portfolio-section">Portfolio</a>
+            <a class="page-links" href="#contact-section">Kontakt</a>
         </nav>
     </header>
 
@@ -33,12 +35,10 @@
                 <h2 id="intro"></h2>
             </div>
         </section>
+        <section class="content-box" id="about-me-section">
+            <h2>About me</h2>
 
-        <!-- news -->
-        <section class="content-box">
-            News
         </section>
-
 
         <section class="parallax" id="parallax-news">
             <div class="inner-box" id="inner-box-news">
@@ -47,9 +47,62 @@
             </div>
         </section>
 
-        <!-- portfolio link -->
+        <!-- news -->
         <section class="content-box" id="portfolio-section">
-            <a href="./pages/portfolio.html" id="parallax-link">Explore my projects</a>
+            <div class="portfolio-page">
+
+                <button class="portfolio-buttons" id="portfolio-prev" onclick="previousIframe()"> &lt; </button>
+
+                <figure class="portfolio-iframes">
+                    <iframe id="portfolio-iframe" class="p-iframe"></iframe>
+                    <figcaption class="iframe-text">
+                        <a id="portfolio-link" class="iframe-links" target="_blank"></a>
+                    </figcaption>
+                </figure>
+
+                <button class="portfolio-buttons" id="portfolio-next" onclick="nextIframe()">&gt;</button>
+
+            </div>
+        </section>
+
+        <section class="parallax" id="parallax-news">
+            <div class="inner-box" id="inner-box-news">
+                Ever since I started learning programming, I've definitely found more gray hairs on my head.
+                And according to my wife, I am also balding. Yay.
+            </div>
+        </section>
+
+
+        <!-- contact section -->
+        <section class="content-box" id="contact-section">
+
+            <h2>Kontakt</h2>
+            <div class="contact-page">
+
+                <div class="contact-container">
+
+                    <p>Kontakta mig på Joakim.bjerselius@hotmail.com</p><br>
+                    <p>Telefon: 0707334042</p><br>
+
+                    <p>Kolla in min github:</p>
+                    <a class="page-links" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> <i
+                            class="fa fa-github"></i></a>
+
+
+                    <p>Lägg till Linkedin: </p>
+                    <a class="page-links" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> <i
+                            class="fa fa-linkedin"></i></a>
+
+                    <p>Följ på Instragram:</p>
+                    <a class="page-links" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> <i
+                            class="fa fa-instagram"></i></a>
+                </div>
+
+            </div>
+
+
+
+
         </section>
 
         <!--lower picture, slightly darker -->
@@ -59,9 +112,7 @@
         <!-- footer -->
         <footer class="content-box" id="footer">
 
-            <a href="https://github.com/jockeBjers" class="footer-links">Github</a>
-
-            <a href="#header" class="footer-links">Back to Top</a>
+            <a href="#parallax-intro" class="footer-links">Till toppen</a>
 
             <div id="footer-right">
                 <p class="footer-text"><strong>Kontakt</strong></p>
