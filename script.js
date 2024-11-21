@@ -11,3 +11,24 @@ function typeWriter() {
 }
 
 typeWriter();
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".page-nav .page-links");
+
+window.onscroll = () => {
+    const midOfDevice = window.innerHeight / 2;
+    let current = "";
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop - midOfDevice;
+        if (scrollY >= sectionTop ) {
+          current = section.getAttribute("id"); }
+      });
+
+    navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+            link.classList.add("active");
+        }
+    });
+};
