@@ -42,6 +42,6 @@ window.onscroll = () => {
 const aboutContainer = document.querySelector('.about-container');
 
 aboutContainer.addEventListener('wheel', (event) => {
-    event.preventDefault(); // Prevent default vertical scroll behavior
-    aboutContainer.scrollLeft += event.deltaY; // Scroll horizontally based on vertical scroll
+    event.preventDefault();
+    aboutContainer.scrollLeft += event.deltaY; 
 });
