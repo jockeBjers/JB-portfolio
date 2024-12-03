@@ -1,3 +1,4 @@
+/* typewriter effect on the main page. */
 var i = 0;
 var txt = 'Välkommen, kul att ni har hittat hit!';
 var speed = 50;
@@ -11,6 +12,8 @@ function typeWriter() {
 }
 
 typeWriter();
+
+/* For the nav to know which section is in view */
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".page-nav .page-links");
@@ -39,6 +42,7 @@ window.onscroll = () => {
     });
 };
 
+/* Change scroll direction when on about page */
 const aboutContainer = document.querySelector('.about-container');
 
 aboutContainer.addEventListener('wheel', (event) => {
