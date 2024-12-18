@@ -19,9 +19,15 @@ const iframes = [
     },
 
     {
+        src: "https://jockebjers.github.io/to-do-list/",
+        link: "https://github.com/jockeBjers/to-do-list",
+        title: "To - do - list"
+    },
+
+    {
         src: "https://jockebjers.github.io/LoginForm/",
         link: "https://github.com/jockeBjers/Loginform",
-        title: "Sign up form"
+        title: "Sign - up - form"
     },
 
     {
@@ -34,11 +40,6 @@ const iframes = [
         src: "https://jockebjers.github.io/Etch-a-Sketch/",
         link: "https://github.com/jockeBjers/Etch-a-Sketch",
         title: "Etch - a - sketch"
-    },
-    {
-        src: "../images/Screenshot_163.png",
-        link: "https://github.com/jockeBjers/StudentManagementSystem",
-        title: "Student management system"
     }
 ];
 
