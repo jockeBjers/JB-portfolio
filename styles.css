@@ -267,33 +267,48 @@ header h1,
 }
 #inner-about-three-div-two p{
     padding-inline: 50px;
+    text-align: start;
 }
 
 #inner-about-three-div-two {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('images/jocke3.jpg');
-        justify-content: end;
-
+    justify-content: end;
 }
-
 
 #inner-about-three-div-three {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('images/amazonas.jpg');
 }
-
+#inner-about-three-div-three p{
+    padding: 50px;
+    text-align: start;
+}
 #inner-about-three-div-four {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('images/boda.png');
+    justify-content: start;
+}
+#inner-about-three-div-four p{
+    padding: 50px;
+    text-align: end;
 }
 
 #inner-about-three-div-five {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('images/joakim.jpg');
+    justify-content: end;
+    padding-bottom:100px;
+}
+
+#inner-about-three-div-five .page-links{
+    color: var(--main-color);
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
 }
 
 .inner-about h2 {
@@ -336,6 +351,7 @@ header h1,
     margin: 20px;
 
 }
+
 
 /* ABOUT PAGE END */
 
