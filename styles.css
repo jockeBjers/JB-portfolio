@@ -253,7 +253,6 @@ header h1,
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -263,22 +262,79 @@ header h1,
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url('images/iguazu.jpg');
+        padding: 150px;
+        justify-content: center;
+}
+#inner-about-three-div-two p{
+    padding-inline: 50px;
 }
 
 #inner-about-three-div-two {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url('images/boda.png');
+        url('images/jocke3.jpg');
+        justify-content: end;
+
 }
+
 
 #inner-about-three-div-three {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url('images/jocke3.jpg');
+        url('images/amazonas.jpg');
+}
+
+#inner-about-three-div-four {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('images/boda.png');
+}
+
+#inner-about-three-div-five {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('images/joakim.jpg');
 }
 
 .inner-about h2 {
     text-align: center;
+}
+
+/* LOOPING LOGOS */
+
+
+.slider {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+
+    0% {
+        transform: translateX(80%);
+    }
+
+    100% {
+        transform: translateX(-20%);
+    }
+}
+
+.slider-items img {
+    width: 12%;
+    margin: 20px;
+
 }
 
 /* ABOUT PAGE END */
