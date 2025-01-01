@@ -46,9 +46,9 @@ window.onscroll = () => {
 const aboutContainer = document.querySelector('.about-container');
 
 aboutContainer.addEventListener('wheel', (event) => {
-    if (window.innerWidth >= 600) {
+    
         event.preventDefault();
         aboutContainer.scrollLeft += event.deltaY; 
-    }
+    
 });
 

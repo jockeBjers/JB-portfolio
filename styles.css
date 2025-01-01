@@ -490,9 +490,8 @@ header h1 {
 
 @media all and (max-width: 600px) {
 
-
     body {
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         overflow-x:hidden;
     }
 
@@ -508,17 +507,19 @@ header h1 {
 
     #header h1 {
         padding: 0px;
+        padding-top: 50px;
     }
 
-    .page-nav {
-        position: relative;
-        flex-direction: column;
-        align-items: flex-start;
+    .page-links{
+        font-size: 20px;
     }
-
 
     #contact-section {
         height: 100svh;
+    }
+
+    .contact-page{
+        height:70%;
     }
 
     .contact-container {
@@ -531,12 +532,15 @@ header h1 {
     .portfolio-page{
         gap:0px;
     }
+
     .portfolio-buttons{
         font-size: 50px;
     }
+
     .p-iframe{
         width: 100%;
     }
+
     .portfolio-iframes{
         width:70%;
     }
@@ -547,5 +551,12 @@ header h1 {
 
     .iframe-links{
         font-size: 20px;
+    }
+
+    .inner-about-three-div {
+        width:100%;
+    }
+    #inner-about-three-div-one {
+        padding:50px;
     }
 }
