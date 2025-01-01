@@ -491,7 +491,6 @@ header h1 {
 @media all and (max-width: 600px) {
 
     body {
-        /* overflow-y: scroll; */
         overflow-x:hidden;
     }
 
@@ -517,6 +516,9 @@ header h1 {
     #contact-section {
         height: 100svh;
     }
+    #contact-section h2 {
+        display: none;
+    }
 
     .contact-page{
         height:70%;
@@ -531,18 +533,26 @@ header h1 {
 
     .portfolio-page{
         gap:0px;
+        align-items: center;
+        justify-content: center;
     }
 
     .portfolio-buttons{
         font-size: 50px;
     }
-
+    
     .p-iframe{
         width: 100%;
     }
-
+    
     .portfolio-iframes{
-        width:70%;
+        width:90%;
+        height: 80%;
+    }
+    
+    #portfolio-next, #portfolio-prev{
+        display: inline-block;
+        margin: 0 0.5rem;
     }
 
     .about-one{
@@ -560,3 +570,5 @@ header h1 {
         padding:50px;
     }
 }
+
+
