@@ -1,0 +1,200 @@
+#about-me-section {
+    height: 100vh;
+}
+
+.about-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color-dark);
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-color: var(--main-color) rgb(53, 53, 53);
+
+}
+
+.about-container::-webkit-scrollbar {
+    height: 10px;
+    background: rgb(53, 53, 53);
+}
+
+.about-container::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+.about-container::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 85, 85);
+}
+
+
+.inner-about {
+    height: 100%;
+    color: var(--secondary-color);
+
+}
+
+.about-one {
+    min-width: 100%;
+    width: 100vw;
+    background:
+        url("../images/fitz-roy.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: inset 0 6px 15px rgba(0, 0, 0, 0.8),
+        inset 0 -6px 15px rgba(0, 0, 0, 0.6);
+
+}
+
+.cutout {
+    background-color: rgb(46, 46, 46);
+    color: rgb(165, 165, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    mix-blend-mode: multiply;
+
+}
+
+.about-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-two .yellow-text {
+    transform: rotate(270deg);
+    white-space: nowrap;
+    display: inline-block;
+    margin: -50px;
+}
+
+.about-three {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.inner-about-three-div {
+    box-shadow: inset 0 6px 15px rgba(0, 0, 0, 0.8),
+        inset 0 -6px 15px rgba(0, 0, 0, 0.6);
+    height: 80%;
+    width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#inner-about-three-div-one {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('../images/iguazu.jpg');
+    padding: 150px;
+    justify-content: center;
+}
+
+#inner-about-three-div-two p {
+    padding-inline: 50px;
+    text-align: start;
+}
+
+#inner-about-three-div-two {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('../images/jocke3.jpg');
+    justify-content: end;
+}
+
+#inner-about-three-div-three {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('../images/amazonas.jpg');
+}
+
+#inner-about-three-div-three p {
+    padding: 50px;
+    text-align: start;
+}
+
+#inner-about-three-div-four {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('../images/boda.png');
+    justify-content: start;
+}
+
+#inner-about-three-div-four p {
+    padding: 50px;
+    text-align: end;
+}
+
+#inner-about-three-div-five {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('//.images/joakim.jpg');
+    justify-content: end;
+    padding-bottom: 100px;
+}
+
+#inner-about-three-div-five .page-links {
+    color: var(--main-color);
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 10px;
+}
+
+.inner-about h2 {
+    text-align: center;
+}
+
+/* LOOPING LOGOS */
+
+
+.slider {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+
+    0% {
+        transform: translateX(80%);
+    }
+
+    100% {
+        transform: translateX(-20%);
+    }
+}
+
+.slider-items img {
+    width: 100px;
+    margin: 20px;
+
+}

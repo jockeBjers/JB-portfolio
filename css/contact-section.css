@@ -1,0 +1,43 @@
+
+#contact-section {
+    height: 100vh;
+}
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.contact-container {
+    word-break: break-word;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--secondary-color);
+    border: 4px, dashed, var(--main-color);
+    font-size: 23px;
+    padding: 50px;
+    background-image:
+        linear-gradient(90deg, var(--background-color-dark) 30%, transparent 80%),
+        linear-gradient(90deg, rgb(43, 43, 43, 0.90) 60%, transparent),
+        url('../images/bogota.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+    width: 60%;
+
+}
+
+.yellow-text {
+    color: var(--main-color);
+}
+
+.page-links .fa {
+    color: var(--main-color);
+    font-size: 48px;
+}

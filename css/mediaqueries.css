@@ -1,0 +1,83 @@
+
+@media all and (max-width: 600px) {
+
+    body {
+        overflow-x:hidden;
+    }
+
+    #intro{
+        word-break: break-word;
+        font-size: 30px;
+        padding:20px;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    #header h1 {
+        padding: 0px;
+        padding-top: 50px;
+    }
+
+    .page-links{
+        font-size: 20px;
+    }
+
+    #contact-section {
+        height: 100svh;
+    }
+    #contact-section h2 {
+        display: none;
+    }
+
+    .contact-page{
+        height:70%;
+    }
+
+    .contact-container {
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .portfolio-page{
+        gap:0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio-buttons{
+        font-size: 50px;
+    }
+    
+    .p-iframe{
+        width: 100%;
+    }
+    
+    .portfolio-iframes{
+        width:90%;
+        height: 80%;
+    }
+    
+    #portfolio-next, #portfolio-prev{
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+
+    .about-one{
+        display: none;
+    }
+
+    .iframe-links{
+        font-size: 20px;
+    }
+
+    .inner-about-three-div {
+        width:100%;
+    }
+    #inner-about-three-div-one {
+        padding:50px;
+    }
+}
