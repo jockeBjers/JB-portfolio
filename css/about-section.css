@@ -147,7 +147,7 @@
 #inner-about-three-div-five {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url('//.images/joakim.jpg');
+        url('../images/joakim.jpg');
     justify-content: end;
     padding-bottom: 100px;
 }
