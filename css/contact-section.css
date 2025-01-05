@@ -1,18 +1,13 @@
 
 #contact-section {
     height: 100vh;
-}
-
-.contact-page {
     display: flex;
     justify-content: center;
-    width: 100%;
-
+    align-items: center;
 }
 
 .contact-container {
     word-break: break-word;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;

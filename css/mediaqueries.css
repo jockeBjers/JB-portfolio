@@ -31,15 +31,14 @@
         display: none;
     }
 
-    .contact-page{
-        height:70%;
-    }
 
     .contact-container {
         padding: 10px;
-        margin: 10px;
-        width: 100%;
+        margin-top: 50px;
+        width: 90%;
         background-size: cover;
+        height:80%;
+        gap: 0px;
     }
 
     .portfolio-page{
