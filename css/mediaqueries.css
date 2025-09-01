@@ -1,14 +1,13 @@
-
 @media all and (max-width: 600px) {
 
     body {
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 
-    #intro{
+    #intro {
         word-break: break-word;
         font-size: 30px;
-        padding:20px;
+        padding: 20px;
     }
 
     #header {
@@ -20,13 +19,14 @@
         padding-top: 50px;
     }
 
-    .page-links{
+    .page-links {
         font-size: 20px;
     }
 
     #contact-section {
         height: 100svh;
     }
+
     #contact-section h2 {
         display: none;
     }
@@ -37,46 +37,52 @@
         margin-top: 50px;
         width: 90%;
         background-size: cover;
-        height:80%;
+        height: 80%;
         gap: 0px;
     }
 
-    .portfolio-page{
-        gap:0px;
+    .portfolio-page {
+        gap: 0px;
         align-items: center;
         justify-content: center;
     }
 
-    .portfolio-buttons{
+    .portfolio-buttons {
         font-size: 50px;
     }
-    
-    .p-iframe{
+
+    .p-iframe {
         width: 100%;
     }
-    
-    .portfolio-iframes{
-        width:90%;
+
+    .portfolio-iframes {
+        width: 90%;
         height: 80%;
     }
-    
-    #portfolio-next, #portfolio-prev{
+
+    #portfolio-next,
+    #portfolio-prev {
         display: inline-block;
         margin: 0 0.5rem;
     }
 
-    .about-one{
+    .about-one {
         display: none;
     }
 
-    .iframe-links{
+    .iframe-links {
         font-size: 20px;
     }
 
     .inner-about-three-div {
-        width:100vw;
+        width: 100vw;
     }
+
     #inner-about-three-div-one {
-        padding:50px;
+        padding: 50px;
+    }
+    
+    .carousel-title {
+        font-size: 1.1rem;
     }
 }

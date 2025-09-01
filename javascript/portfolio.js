@@ -1,89 +1,83 @@
 
-const iframes = [
+
+const projects = [
     {
-        src: "https://jockebjers.github.io/calculator/",
-        link: "https://github.com/jockeBjers/calculator",
-        title: "Calculator"
+        repo: "https://github.com/jockeBjers/Curly",
+        title: "Curly",
+        description: "En enkel HTTP-klient skrivbordapp byggd med Flutter för att snabbt testa REST-API:er. Skicka GET-, POST-, PUT-, PATCH- och DELETE-förfrågningar"
+    },
+    {
+        demo: "https://isolkalkyl.web.app",
+        title: "IsolKalkyl",
+        description: "En webbapplikation för att beräkna materialåtgång för teknisk isolering"
+
+    },
+    {
+        repo: "https://github.com/jockeBjers/isolApi",
+        title: "IsolKalkylApi",
+        description: "Då Isolkalkyl för nuvarande använder Firebase så är detta projekt menat att öva på Autentisering och säkerhet i .NET"
+    },
+    {
+        demo: "https://mortal-weather.github.io/TempCheck/",
+        repo: "https://github.com/Mortal-Weather/TempCheck",
+        title: "TempCheck",
+        description: "En väderapp som visar aktuell väderdata och prognoser genom att ansluta till en väder-API. Ingen auth, logga in med valfritt lösenord"
+    },
+     {
+        repo: "https://github.com/Ett-bra-team-som-samarbetar-bra/ostgota-event",
+        title: "OstgotaEvent",
+        description: "Skolprojekt, en eventhanterare byggd med .NET och Blazor"
     },
 
-    {
-        src: "https://mortal-weather.github.io/TempCheck/",
-        link: "https://github.com/Mortal-Weather/TempCheck",
-        title: "TempCheck"
-    },
 
-    {
-        src: "https://jockebjers.github.io/cooking-school/",
-        link: "https://github.com/jockeBjers/cooking-school",
-        title: "Cooking School"
-    },
 
-    {
-        src: "https://jockebjers.github.io/to-do-list/",
-        link: "https://github.com/jockeBjers/to-do-list",
-        title: "To - do - list"
-    },
-
-    {
-        src: "https://jockebjers.github.io/LoginForm/",
-        link: "https://github.com/jockeBjers/Loginform",
-        title: "Sign - up - form"
-    },
-
-    {
-        src: "https://jockebjers.github.io/rock-paper-scissors/",
-        link: "https://github.com/jockeBjers/rock-paper-scissors",
-        title: "Rock - Paper - Scissors"
-    },
-
-    {
-        src: "https://jockebjers.github.io/Etch-a-Sketch/",
-        link: "https://github.com/jockeBjers/Etch-a-Sketch",
-        title: "Etch - a - sketch"
-    }
 ];
 
-let currentIframeIndex = 0;
-const iframeElement = document.getElementById("portfolio-iframe");
-const linkElement = document.getElementById("portfolio-link");
-const prevButton = document.getElementById("portfolio-prev");
-const nextButton = document.getElementById("portfolio-next");
 
-function updateIframe() {
+const listElement = document.getElementById("carousel-list");
 
+function renderCarousel() {
+    listElement.innerHTML = "";
+    projects.forEach((project) => {
+        const li = document.createElement("li");
+        li.className = "carousel-item";
 
-    iframeElement.src = iframes[currentIframeIndex].src;
-    linkElement.href = iframes[currentIframeIndex].link;
-    linkElement.textContent = iframes[currentIframeIndex].title;
+        const title = document.createElement("div");
+        title.className = "carousel-title";
+        title.textContent = project.title;
 
-    if (currentIframeIndex === 0) {
-        prevButton.style.visibility = 'hidden';
-    } else {
-        prevButton.style.visibility = 'visible';
-    }
+        const description = document.createElement("p");
+        description.className = "project-description";
+        description.textContent = project.description;
 
-    if (currentIframeIndex === iframes.length - 1) {
-        nextButton.style.visibility = 'hidden';
-    } else {
-        nextButton.style.visibility = 'visible';
-    }
+        const btns = document.createElement("div");
+        btns.className = "carousel-buttons";
+
+        if (project.repo) {
+            const repoBtn = document.createElement("a");
+            repoBtn.className = "carousel-btn repo-btn";
+            repoBtn.href = project.repo;
+            repoBtn.target = "_blank";
+            repoBtn.innerHTML = '<i class="fa fa-github"></i> Repo';
+            btns.appendChild(repoBtn);
+        }
+
+        if (project.demo) {
+            const demoBtn = document.createElement("a");
+            demoBtn.className = "carousel-btn demo-btn";
+            demoBtn.href = project.demo;
+            demoBtn.target = "_blank";
+            demoBtn.innerHTML = '<i class="fa fa-external-link"></i> Live Demo';
+            btns.appendChild(demoBtn);
+        }
+
+        li.appendChild(title);
+        li.appendChild(description);
+        li.appendChild(btns);
+
+        listElement.appendChild(li);
+    });
 }
 
-
-function nextIframe() {
-    if (currentIframeIndex < iframes.length - 1) {
-        currentIframeIndex++;
-        updateIframe();
-    }
-}
-
-function previousIframe() {
-    if (currentIframeIndex > 0) {
-        currentIframeIndex--;
-        updateIframe();
-    }
-}
-
-currentIframeIndex = 0;
-updateIframe();
+renderCarousel();
 
