@@ -54,33 +54,47 @@
                 <div class="inner-about about-three">
 
                     <div class="inner-about-three-div" id="inner-about-three-div-one">
-                        <p>Jag heter Joakim och är från Norrköping. Just nu studerar jag systemutveckling .net på TUC yrkeshögskola i Linköping.
+                        <p>Jag heter Joakim och är från Norrköping. Just nu studerar jag systemutveckling .NET på TUC
+                            yrkeshögskola i Linköping.
                         </p>
 
                     </div>
 
                     <div class="inner-about-three-div" id="inner-about-three-div-two">
-                        <p> Några av dom språk jag har jobbat med och lär mig om: </p>
+                        <p> Några av de språk och verktyg som jag har jobbat med och lär mig om: </p>
                         <div class="slider">
                             <div class="slider-items">
-                                <img src="./images/logos/c-sharp-removebg-preview.png" alt="">
-                                <img src="./images/logos/html-logo-removebg-preview.png" alt="">
-                                <img src="./images/logos/JavaScript-logo.png" alt="">
-                                <img src="./images/logos/Screenshot_192-removebg-preview.png" alt="">
-                                <img src="./images/logos/Java_programming_language_logo.svg.png" alt="">
-                                <img src="./images/logos/Screenshot_193-removebg-preview.png" alt="">
-                                <img src="./images/logos/c-sharp-removebg-preview.png" alt="">
-                                <img src="./images/logos/html-logo-removebg-preview.png" alt="">
-                                <img src="./images/logos/JavaScript-logo.png" alt="">
-                                <img src="./images/logos/Screenshot_192-removebg-preview.png" alt="">
-                                <img src="./images/logos/Java_programming_language_logo.svg.png" alt="">
-                                <img src="./images/logos/Screenshot_193-removebg-preview.png" alt="">
+                                <img src="https://img.shields.io/badge/C%23-%232d2d2d.svg?style=for-the-badge&logo=c-sharp&logoColor=ffd900"
+                                    alt="C#">
+                                <img src="https://img.shields.io/badge/.NET-%232d2d2d.svg?style=for-the-badge&logo=.net&logoColor=ffd900"
+                                    alt=".NET">
+                                <img src="https://img.shields.io/badge/HTML5-%232d2d2d.svg?style=for-the-badge&logo=html5&logoColor=ffd900"
+                                    alt="HTML5">
+                                <img src="https://img.shields.io/badge/CSS3-%232d2d2d.svg?style=for-the-badge&logo=css3&logoColor=ffd900"
+                                    alt="CSS3">
+                                <img src="https://img.shields.io/badge/JavaScript-%232d2d2d.svg?style=for-the-badge&logo=javascript&logoColor=ffd900"
+                                    alt="JavaScript">
+                                <img src="https://img.shields.io/badge/TypeScript-%232d2d2d.svg?style=for-the-badge&logo=typescript&logoColor=ffd900"
+                                    alt="TypeScript">
+                                <img src="https://img.shields.io/badge/Flutter-%232d2d2d.svg?style=for-the-badge&logo=flutter&logoColor=ffd900"
+                                    alt="Flutter">
+                                <img src="https://img.shields.io/badge/Dart-%232d2d2d.svg?style=for-the-badge&logo=dart&logoColor=ffd900"
+                                    alt="Dart">
+                                <img src="https://img.shields.io/badge/Firebase-%232d2d2d.svg?style=for-the-badge&logo=firebase&logoColor=ffd900"
+                                    alt="Firebase">
+                                <img src="https://img.shields.io/badge/Vue.js-%232d2d2d.svg?style=for-the-badge&logo=vue.js&logoColor=ffd900"
+                                    alt="Vue.js">
+                                <img src="https://img.shields.io/badge/SQL-%232d2d2d.svg?style=for-the-badge&logo=sqlite&logoColor=ffd900"
+                                    alt="SQL">
+                                <img src="https://img.shields.io/badge/Git-%232d2d2d.svg?style=for-the-badge&logo=git&logoColor=ffd900"
+                                    alt="Git">
                             </div>
                         </div>
                     </div>
 
                     <div class="inner-about-three-div" id="inner-about-three-div-three">
-                        <p>Utöver programmering tycker jag om matlagning, att resa och lära mig om nya kulturer. Jag har tidigare arbetat med isolering. </p>
+                        <p>Utöver programmering tycker jag om matlagning, att resa och lära mig om nya kulturer. Jag har
+                            tidigare arbetat med isolering. </p>
                     </div>
 
                     <div class="inner-about-three-div" id="inner-about-three-div-four">
@@ -89,8 +103,9 @@
 
                     <div class="inner-about-three-div" id="inner-about-three-div-five">
 
-                        <a class="page-links" href="./images/CV_JOAKIM.pdf" download="joakim.bjerselius.cv.pdf" > Ladda ned CV</a>
-                        
+                        <a class="page-links" href="./images/CV_JOAKIM.pdf" download="joakim.bjerselius.cv.pdf"> Ladda
+                            ned CV</a>
+
                     </div>
                 </div>
 
@@ -103,19 +118,14 @@
 
         <!-- Portfolio -->
         <section class="content-box" id="portfolio-section">
-            <div class="portfolio-page">
+            <div class="portfolio-carousel">
+                <div class="portfolio-intro">
+                    Här visas några av mina <strong>projekt</strong> jag har arbetat med
 
-                <button class="portfolio-buttons" id="portfolio-prev" onclick="previousIframe()"> &lt; </button>
+                </div>
+                <ul id="carousel-list" class="carousel-list">
 
-                <figure class="portfolio-iframes">
-                    <iframe id="portfolio-iframe" class="p-iframe"></iframe>
-                    <figcaption class="iframe-text">
-                        <a id="portfolio-link" class="iframe-links" target="_blank"></a>
-                    </figcaption>
-                </figure>
-
-                <button class="portfolio-buttons" id="portfolio-next" onclick="nextIframe()">&gt;</button>
-
+                </ul>
             </div>
         </section>
 
@@ -126,26 +136,24 @@
         <section class="content-box" id="contact-section">
 
             <h2>Kontakt</h2>
-          
-                <div class="contact-container">
 
-                    <p>Kontakta mig på </p>
-                    <p class="yellow-text">Joakim.bjerselius@hotmail.com</p>
-                    <p>Telefon:</p>
-                    <p class="yellow-text"> 0707334042</p>
+            <div class="contact-container">
 
-                    <p>Lägg till Linkedin: </p>
-                    <a class="page-links" href="https://www.linkedin.com/in/joakim-bjerselius-416460325/"
-                        target="_blank"> <i class="fa fa-linkedin"></i></a>
+                <p>Kontakta mig på </p>
+                <p class="yellow-text">Joakim.bjerselius@hotmail.com</p>
+                <p>Telefon:</p>
+                <p class="yellow-text"> 0707334042</p>
 
-                    <p>Följ på Instragram:</p>
-                    <a class="page-links" href="https://www.instagram.com/jockebjers/" target="_blank"> <i
-                            class="fa fa-instagram"></i></a>
-                    <p>Kolla in min github:</p>
-                    <a class="page-links" href="https://github.com/jockeBjers" target="_blank"> <i
-                            class="fa fa-github"></i></a>
-                </div>
-           
+                <p>Lägg till Linkedin: </p>
+
+                <a class="page-links" href="https://www.linkedin.com/in/joakim-bjerselius-416460325/" target="_blank">
+                    <i class="fa fa-linkedin"></i></a>
+
+                <p>Kolla in min github:</p>
+                <a class="page-links" href="https://github.com/jockeBjers" target="_blank"> <i
+                        class="fa fa-github"></i></a>
+            </div>
+
         </section>
 
     </main>
